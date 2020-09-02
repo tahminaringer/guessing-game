@@ -10,7 +10,7 @@ body {
 header {
     height: 75px;
     border-style: double;
-    border-width: 10px;
+    border-width: 20px;
     text-align: center;
     font-size: 15px;
     margin-top: 25px;
@@ -18,7 +18,7 @@ header {
 }
 
 h1 {
-    color: whitesmoke;
+    color: rgb(217, 242, 240);
 }
 
 main {
@@ -26,18 +26,25 @@ main {
 }
 
 img {
-    height: 275px;
-    width: 200px;
+    border: double 15px;
+    margin-left: 350px;
+    height: 308px;
+    width: 225px;
     float: left;
+
  }
 
 p {
     margin-top: 50px;
-    margin-left: 215px;
+    margin-left: 610px;
+    margin-right: 350px;
+    border: 5px solid;
+    padding: 20px;
+    background-color: rgb(136, 174, 176);
 }
 
 footer {
     height: 50px;
-    background-color: rgb(155, 161, 176);
+    background-color: rgb(143, 165, 167);
     border-style: solid;
 }

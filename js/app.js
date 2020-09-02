@@ -23,7 +23,7 @@ switch (question1) {
     case 'no':
     alert(question1 + '?!' + ' Puppies are the best!');
     }
-}
+} 
 
 ready = prompt('Do you want to continue?');
 
@@ -46,5 +46,28 @@ if (ready.toLowerCase() === 'yes') {
     }
     else if(question2 === 'no'){
         alert('I suggest you try it again!');
+    }   
+
+    var question4 = prompt('Am I from Montana?');
+
+    if (question4.toUpperCase() === 'YES') {
+        alert('Correct!  ' + name + ', ' + 'I grew grew up in a small town called Joliet.');
     }
-}   
+    else if(question4.toUpperCase() === 'NO'){
+        alert('Actually, I did grow up in Montana!');
+    }
+
+    var question5 = prompt('Do I love flowers?');
+
+    if (question5.toLowerCase() === 'yes') {
+        alert('Sure thing ' + name + ',' + ' I love designing beautiful things with flowers!');
+    }
+    else if(question5.toLowerCase() === 'no'){
+        alert('Flowers are one of my favorite things and I love making cool things with them!');
+    }
+}
+else if(ready.toLowerCase() === 'no'){
+    alert('Good bye ' + name)
+}
+    
+    alert('Thank you for playing' + name + 'I hope you enjoyed getting to know me better');
