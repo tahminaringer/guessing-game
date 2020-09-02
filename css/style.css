@@ -1,0 +1,43 @@
+#site-title {
+    color: rgb(189, 133, 242);
+}
+
+body {
+    height: calc(100vh - 125px);
+    background-color: rgb(101, 133, 133);
+}
+
+header {
+    height: 75px;
+    border-style: double;
+    border-width: 10px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    background-color: rgb(59, 63, 72);
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+main {
+    height: 100%;
+}
+
+img {
+    height: 275px;
+    width: 200px;
+    float: left;
+ }
+
+p {
+    margin-top: 50px;
+    margin-left: 215px;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(155, 161, 176);
+    border-style: solid;
+}
