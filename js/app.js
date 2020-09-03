@@ -1,5 +1,7 @@
 'use strict'
 
+var totalCorrectAnswers = 0
+
 //console.log('js is loaded');
 
 var name = prompt('What is your first name?');
@@ -70,4 +72,59 @@ else if(ready.toLowerCase() === 'no'){
     alert('Good bye ' + name)
 }
     
-    alert('Thank you for playing' + name + 'I hope you enjoyed getting to know me better');
+    alert('Thank you for playing ' + name + 'I hope you enjoyed getting to know me better');
+
+   
+    var question6 = prompt('Want to play another game?');
+    var answer = ('5');
+
+        for (var i = 0; i < 3; i = i + 1){
+           var userGuess = prompt('Guess a number between 1-50');
+            if(userGuess === answer){
+                alert('great job ' + name + "! " + 'You are correct!');
+                totalCorrectAnswers++
+                break;
+            } else if(userGuess < answer){
+                alert('Bummer ' + name + ', ' + 'you guessed too low!');
+            } else if (userGuess > answer){
+                alert('Bummer ' + name + ', ' + 'you guessed too high!');
+            }
+            if(i === 3){
+                alert(name + 'the correct answer is ' + answer);
+            }
+        }
+  
+    
+
+//var question7 = prompt(name + ' do you want to continue to play?');
+
+var answer7 = ['flowers', 'nature', 'family', 'friends', 'gardening', 'hiking'];
+
+for (var i = 0; i < 6; i++) {
+    var userGuess7 = prompt('Name one of my favorite things?');
+    console.log(answer7[i]);
+    if (answer7.includes(userGuess7.toLowerCase())) {
+        alert('You guessed right!')
+        totalCorrectAnswers++
+        break;
+    } else if(i === 5 && !answer7.includes(userGuess7.toLowerCase())) {
+        alert('You guessed wrong, but here are the right answers! ' + answer7)
+    } else {
+        alert('Guess again')
+    }
+}
+
+alert('Congratulations ' + name + ' you got the following questions correct! ' + totalCorrectAnswers);
+
+// if (question7 === i <){
+//     alert(name + ' you are correct!');
+// } else {
+//     alert(name + ' you are incorrect');
+//     if (question === answer){
+//         alert(name + question7 === answer7);
+//     } else if (question7 != answer7 === answer7.length) {
+//         alert(name + ' the correct answers are ' + answer7);
+//     }
+//}
+
+//totalCount++

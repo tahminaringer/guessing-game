@@ -1,3 +1,3 @@
-# guessing-game
-About Me Guessing Game
+# About Me Guessing Game
+
 

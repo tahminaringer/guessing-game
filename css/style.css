@@ -22,25 +22,47 @@ h1 {
 }
 
 main {
-    height: 100%;
+    border: solid;
+}
+
+#class-intro {
+    margin: auto;
+    display: inline;
+    width: 80%;
 }
 
 img {
     border: double 15px;
-    margin-left: 350px;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 50px; 
     height: 308px;
     width: 225px;
-    float: left;
+    float: left; 
 
  }
 
 p {
-    margin-top: 50px;
-    margin-left: 610px;
-    margin-right: 350px;
+    margin-top: 120px;
+    margin-left: 250px;  
+    margin-right: 250px;
     border: 5px solid;
     padding: 20px;
     background-color: rgb(136, 174, 176);
+}
+
+#unordered {
+    margin-left: 350px;
+    margin-right: 350px;
+    border: solid 15px;
+}
+
+#ordered {
+    border: dotted;
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 10px;
 }
 
 footer {
