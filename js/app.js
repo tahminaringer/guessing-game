@@ -93,10 +93,6 @@ else if(ready.toLowerCase() === 'no'){
                 alert(name + 'the correct answer is ' + answer);
             }
         }
-  
-    
-
-//var question7 = prompt(name + ' do you want to continue to play?');
 
 var answer7 = ['flowers', 'nature', 'family', 'friends', 'gardening', 'hiking'];
 
@@ -116,15 +112,6 @@ for (var i = 0; i < 6; i++) {
 
 alert('Congratulations ' + name + ' you got the following questions correct! ' + totalCorrectAnswers);
 
-// if (question7 === i <){
-//     alert(name + ' you are correct!');
-// } else {
-//     alert(name + ' you are incorrect');
-//     if (question === answer){
-//         alert(name + question7 === answer7);
-//     } else if (question7 != answer7 === answer7.length) {
-//         alert(name + ' the correct answers are ' + answer7);
-//     }
-//}
-
-//totalCount++
+var answer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for(var i = 1; i <= 10; i++)
+    var printNumbers = prseInt(prompt)
