@@ -55,6 +55,7 @@ p {
     margin-left: 350px;
     margin-right: 350px;
     border: solid 15px;
+    background-color: rgb(136, 174, 176);
 }
 
 #ordered {
@@ -63,10 +64,11 @@ p {
     margin-left: 400px;
     margin-right: 400px;
     margin-bottom: 10px;
+    background-color: rgb(136, 174, 176);
 }
 
 footer {
     height: 50px;
-    background-color: rgb(143, 165, 167);
+    background-color: rgb(163, 165, 165);
     border-style: solid;
 }
