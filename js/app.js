@@ -12,9 +12,9 @@ alert('Nice to meet you ' + name + '!');
 
 
 //console.log(ready);
-var question1 = 'Do you like puppies?';
-var question2 = 'Is pizza your favorite food?';
-var question3 = 'Is Magarita your favorite pizza?';
+var question1 = 'Do I have identical twin boys? ';
+var question2 = 'Do I love to cook!';
+var question3 = 'Is spending time in nature my creative inspiration?';
 var question4 = 'Am I from Montana?';
 var question5 = 'Do I love flowers?';
 
@@ -32,11 +32,11 @@ function aboutMe(question,alertYes,alertNo) {
   }
 }
 
-aboutMe(question1,'Puppies are the cutest!','What?!');
-aboutMe(question2,'Me too!','We do not agree');
-aboutMe(question3, 'I like Magarita too!','That\'s silly!');
+aboutMe(question1,'Yes, they are 5 and magical little beings!','Actually I have 5yr old twins?');
+aboutMe(question2,'Correct, cooking is one of my favorite pastimes!','Incorrect I love trying new recipes!');
+aboutMe(question3, 'Correct, I love drawing inspiration from nature!','That is silly, I love nature!');
 aboutMe(question4,'I am from Montana!','Actually, I grew up in Montana');
-aboutMe(question5, 'Yes, dahlias are my favorite!','What\'s wrong with you?!');
+aboutMe(question5, 'Yes, dahlias are my favorite!','Of coarse I love flowers!');
 
 alert('Thank you for playing ' + name + 'I hope you enjoyed getting to know me better');
 
@@ -44,7 +44,7 @@ alert('Thank you for playing ' + name + 'I hope you enjoyed getting to know me b
 function askUser () {
   var question6 = prompt('Want to play another game?');
   if (question6 === 'yes') {
-    var answer = ('5');
+    var answer = (5);
     numberGame(answer,4);
   } else if(question6 === 'no') {
     alert('Good bye ' + name);
@@ -57,7 +57,7 @@ askUser();
 
 function numberGame(number, max) {
   for (var i = 0; i < max; i = i + 1){
-    var userGuess = prompt('Guess a number between 1-50');
+    var userGuess = parseInt(prompt('Guess a number between 1-50'));
     if(userGuess === number){
       alert('great job ' + name + '! ' + 'You are correct!');
       totalCorrectAnswers++;
@@ -68,7 +68,7 @@ function numberGame(number, max) {
       alert('Bummer ' + name + ', ' + 'you guessed too high!');
     }
     if(i === max -1){
-      alert(name + 'the correct answer is ' + number);
+      alert(name + ' the correct answer is ' + number);
       break;
     }
   }
@@ -91,14 +91,14 @@ function aboutMeGame(answer7,max) {
     var answeredCorrect = false;
     for (var j = 0; j < answer7.length; j++) {
       if (userGuess7 === answer7[j]) {
-        alert('You guessed right!' + 'Here are all the correct answers! ' + answer7);
+        alert(name + 'You guessed right! ' + 'Here are all the correct answers! ' + answer7);
         totalCorrectAnswers++;
         answeredCorrect = true;
       }
     }
     if (answeredCorrect === false) {
-      if (i === 5) {
-        alert('You guessed wrong, but here are the right answers! ' + answer7);
+      if (i === (max - 1)) {
+        alert(name + 'You guessed wrong, but here are the right answers! ' + answer7);
       } else {
         alert('Guess again');
       }
