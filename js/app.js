@@ -1,34 +1,23 @@
 'use strict';
 
 var totalCorrectAnswers = 0;
-
-//console.log('js is loaded');
-
 var name = prompt('What is your first name?');
 
 alert('Nice to meet you ' + name + '!');
-//console.log(name);
-//console.log("Hello" + name);
 
-
-//console.log(ready);
 var question1 = 'Do I have identical twin boys? ';
 var question2 = 'Do I love to cook!';
 var question3 = 'Is spending time in nature my creative inspiration?';
 var question4 = 'Am I from Montana?';
 var question5 = 'Do I love flowers?';
 
-// remember that question == var question1-5
-
 function aboutMe(question,alertYes,alertNo) {
   question = prompt(question).toLowerCase();
   if(question === 'yes') {
     alert(alertYes);
     totalCorrectAnswers++;
-    // console.log(alertYes);
   } else {
     alert(alertNo);
-    // console.log(alertNo);
   }
 }
 
@@ -40,7 +29,6 @@ aboutMe(question5, 'Yes, dahlias are my favorite!','Of coarse I love flowers!');
 
 alert('Thank you for playing ' + name + 'I hope you enjoyed getting to know me better');
 
-// question 6
 function askUser () {
   var question6 = prompt('Want to play another game?');
   if (question6 === 'yes') {
@@ -76,18 +64,9 @@ function numberGame(number, max) {
   aboutMeGame(answer7,6);
 }
 
-// var question6 = prompt('Want to play another game?');
-// question 7
-
-
-
 function aboutMeGame(answer7,max) {
-  // console.log(answer7);
-  // console.log(max);
   for (var i = 0; i < max; i++) {
     var userGuess7 = prompt('Name one of my favorite things?');
-    // console.log(answer7[i]);
-    //this for loop checks potential answers
     var answeredCorrect = false;
     for (var j = 0; j < answer7.length; j++) {
       if (userGuess7 === answer7[j]) {
@@ -109,11 +88,4 @@ function aboutMeGame(answer7,max) {
   }
 }
 
-
-
-
 alert('Congratulations ' + name + ' you got the following questions correct! ' + totalCorrectAnswers);
-
-/* var answer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for(var i = 1; i <= 10; i++)
-    var printNumbers = prseInt(prompt); */
